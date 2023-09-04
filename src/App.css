@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Rubik:ital@0;1&display=swap');
+
+:root {
+  --dark1: #000f08;
+  --gray1: #4d4847; /*davy-gray*/
+  --theme-color1: #2a2d34ff; /* gunmental */
+  --theme-color2: #30c5ffff; /* deep-sky-blue */
+  --theme-color3: #f9e0d9ff; /* misty-rose */
+  --theme-color4: jet-black;
+  --accent1: #5c946eff; /* sea-green */
+  --accent2: #ffca3aff; /* sunglow */
+  font-size: xx-large;
+}
 
 * {
   font-family: 'Rubik';
+  background-color: var(--dark1);
+  /* Hide Scrollbar From IE, Edge, And Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.Theme {
-  --burgundy: #780116ff;
-  --columbia-blue: #bfd1e5ff;
-  --myrtle-green: #307473ff;
-  --oxford-blue: #000022ff;
-  --jonquil: #f0c808ff;
-}
-
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {
@@ -21,26 +29,58 @@
   pointer-events: none;
 }
 
+.App-header {
+  text-align: center;
+  min-height: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-color2);
+  justify-content: center;
+  font-size: 1em;
+  color: white;
+}
+
+nav {
+  display: flex;
+  font-size: 0.8em;
+  font-family: 'Jetbrains Mono';
+  height: fit-content;
+  padding: 0.25em;
+  background-color: var(--theme-color3);
+  justify-content: space-around;
+}
+
+a {
+  background-color: transparent;
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.underline-hover {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0rem;
+}
+.underline-hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent1);
+  transition: width 0.25s ease-out;
+}
+.underline-hover:hover::before {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  /*font-family: 'Rubik';*/
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
