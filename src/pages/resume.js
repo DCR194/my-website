@@ -10,9 +10,7 @@ function Resume() {
       <header className="App-header">This is my website, I am Diego!</header>
       <Navbar />
       <br />
-      <WorkExperience></WorkExperience>
-      <br />
-      <ignore>This is a test of something to come</ignore>
+      <WorkExperience />
     </>
   );
 }
