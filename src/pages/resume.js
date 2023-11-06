@@ -8,6 +8,9 @@ function Resume() {
   return (
     <>
       <header className="App-header">This is my website, I am Diego!</header>
+      <h2 id="centered">THIS IS STILL UNDER CONSTRUCTION <br></br>
+      please enjoy some narwhals in the meantime :)</h2>
+      
       <Navbar />
       <br />
       <WorkExperience />

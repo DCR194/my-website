@@ -21,6 +21,20 @@
   scrollbar-width: none; /* Firefox */
 }
 
+#centered{
+  text-align: center;
+  background-color: red;
+  background: hsla(55, 78%, 41%, 1);
+
+  background: linear-gradient(90deg, hsla(55, 78%, 41%, 1) 0%, hsla(0, 98%, 49%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(55, 78%, 41%, 1) 0%, hsla(0, 98%, 49%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(55, 78%, 41%, 1) 0%, hsla(0, 98%, 49%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BBAE17", endColorstr="#F80202", GradientType=1 );
+}
+
 h2 {
   font-family: 'Jetbrains Mono';
   font-size: 0.8rem;
