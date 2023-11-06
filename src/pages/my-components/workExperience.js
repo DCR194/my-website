@@ -8,11 +8,7 @@ function WorkExperience() {
       <backdrop class="container">
         <h2>WORK 1</h2>
         <img src={placeholder} alt="this is a placeholder" width="100%" />
-        <p>
-          SAMPLE TEXT TELL ME TELL MEIHBADFIU ABUSIBD AWGYIDH AIUHD IEUFH AIUH
-          SIUH IAUSH IASUIDH ASIUDH AISUDHD IAUSHD AISUHD IUHAS IDUHA ISUHD
-          AISUDH AISUDH AISUDH AISUDH AISUDH AISUHD AISUDH AISUDH AISUDH AISUDH{' '}
-        </p>
+        <p>SAMP </p>
       </backdrop>
 
       <backdrop class="container">

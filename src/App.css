@@ -28,6 +28,10 @@ h2 {
   margin: 0;
 }
 
+backdrop > h2 {
+  align-self: center;
+}
+
 p {
   font-family: 'Rubik';
 }
@@ -80,21 +84,21 @@ WorkExperience {
 
 backdrop {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  vertical-align: top;
   min-width: 250px;
   max-width: 25%;
   padding: 0.5rem;
-  /*
-  background-color: var(--theme-color1);
-  border-radius: 0.5rem;
-  */
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
   font-size: 0.5rem;
   gap: 1em;
 }
@@ -108,13 +112,21 @@ backdrop {
   background-color: var(--gray1);
   border-radius: 1.5rem;
   */
-  border-color: var(--accent2);
+
+  border-width: 0.2em;
+
+  box-shadow: 0 0 0.75em var(--accent1);
+
+  border-color: var(--accent1);
   border-style: inset;
-  transition: 1s ease-out;
+  border-radius: 0;
+  transition-property: border-color;
+  transition: all 0.5s ease-in-out;
 }
 .container.big:hover {
-  border-color: var(--accent1);
-  border-style: dashed;
+  box-shadow: 0 0 2em var(--theme-color2);
+  border-color: var(--theme-color2);
+  border-width: 0.2em;
 }
 
 .underline-hover {
