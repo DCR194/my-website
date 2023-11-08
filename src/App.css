@@ -35,6 +35,12 @@
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BBAE17", endColorstr="#F80202", GradientType=1 );
 }
 
+.centeredimg{
+  margin:auto
+}
+
+
+
 h2 {
   font-family: 'Jetbrains Mono';
   font-size: 0.8rem;
