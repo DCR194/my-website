@@ -4,7 +4,10 @@ import React from 'react';
 function Navbar() {
   return (
     <nav width="100%">
-      <a href="/resume" class="underline-hover">
+      <a href="/" class="underline-hover">
+        Home
+      </a>
+      <a href="https://drive.google.com/file/d/13XTRj41Dq8-jOmIHfNdUvYYIV7KSzvNg/view?usp=sharing" class="underline-hover">
         Resume
       </a>
       <a href="/projects" class="underline-hover">

@@ -36,7 +36,11 @@
 }
 
 .centeredimg{
-  margin:auto
+  margin:auto;
+}
+
+.projects_window_height{
+  height: 40vh;
 }
 
 
