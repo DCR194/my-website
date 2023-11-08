@@ -81,13 +81,26 @@ p {
 
 nav {
   display: flex;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-family: 'Jetbrains Mono';
   height: fit-content;
   padding: 0.25em;
   /* background-color: var(--gray1); */
   /*background-blend-mode: var(--accent2);*/
   justify-content: space-around;
+  text-align: center;
+  text-wrap: wrap;
+  overflow-wrap: normal;
+}
+
+.centeredtxt {
+  position: absolute;
+
+}
+.navbarmid{
+  position: relative;
+  left: 0.3rem
+  
 }
 
 a {
@@ -158,6 +171,7 @@ backdrop {
   position: relative;
   font-size: 0.8rem;
   padding-bottom: 0rem;
+  
 }
 .underline-hover::before {
   content: '';
